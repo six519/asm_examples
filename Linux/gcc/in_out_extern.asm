@@ -11,7 +11,7 @@ input:      resb            0x64
             section         .text
 main:
             mov             rdi, string1
-            xor             rax, rax
+            xor             rax, rax ;printf is variadic or varargs function so need to call this
             call            printf
             mov             rdi, 0
             mov             rsi, input
@@ -19,7 +19,7 @@ main:
             call            read
             mov             rdi, string2
             mov             rsi, input
-            xor             rax, rax
+            xor             rax, rax ;printf is variadic or varargs function so need to call this
             call            printf
             jmp exit
 
