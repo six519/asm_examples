@@ -13,4 +13,5 @@ kill_process:
             mov         rdi, r15
             mov         rsi, SIGKILL
             syscall
+            mov         rax, r15
             ret
