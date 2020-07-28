@@ -1,4 +1,5 @@
 ;Boot sector example code
+;qemu-system-x86_64 boot.img (to test using qemu)
 ;just practicing programming in assembly language (Ferdinand Silva)
 %macro print 1
         mov         al, %1
