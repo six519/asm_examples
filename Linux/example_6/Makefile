@@ -14,4 +14,4 @@ clean:
 	nasm -felf64 $<
 
 %: %.o
-	gcc $< -o $@
+	gcc -no-pie $< -o $@

@@ -12,4 +12,4 @@ clean:
 	nasm -f elf64 $<
 
 %: %.o
-	gcc -o $@ $<
+	gcc -no-pie -o $@ $<
